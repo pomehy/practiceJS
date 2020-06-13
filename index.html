@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>PracticeJS</title>
 </head>
 <body>
-    
+    <div class="container">
+        <button class="heart" type="button"><span class="likes-number">12</span></button>
+        <section class="comment-feed container">
+            <h2>Комментарии</h2>
+            <ol class="comment-list">
+                <li class="user-comment">Да ну, бред какой-то…</li>
+            </ol>
+            <form action="" method="post" class="comment-form">
+                <div class="comment-inner">
+                    <label class="comment-label" for="comment-input">ваш комментарий</label>
+                    <input type="text" class="comment-field" value="A Java и JavaScript - это одно и то же?"
+                        placeholder="Комментарий" required id="comment-input">
+                </div>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </section>
+        <section class="popup container">
+            <div class="popup__content">
+                <span class="popup__text"></span>
+                <button class="popup__button button--close" type="button">Х</button>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ea odio cupiditate asperiores doloribus fugiat atque expedita quia, cumque debitis voluptatibus quas omnis tenetur porro.</p>
+            <button class="popup__button" type="button" data-popup-text="Ткнул ? Молодец ! Возьми с полки пирожок :) !">Ткни меня</button>
+            <button class="popup__button" type="button" data-popup-text="Сказали же не нажимай :) !">не нажимай меня</button>
+        </section>   
+        <!-- <section class="red" id="red">
+            <button class="red__button">переход</button>
+        </section>
+        <section class="green" id="green">
+            <button class="green__button">переход</button>
+        </section>
+        <section class="blue" id="blue">
+            <button class="blue__button">переход</button>            
+        </section> -->
+        <section class="calc">
+            <form class="calc__form" action="">
+                <input class="calc__input-1" type="number" id="calc_0">
+                <input class="calc__input-2" type="number" id="calc_1">
+                <span class="calc__result"></span>
+                <button class="calc__button" type="button">Посчитать</button>
+            </form>
+        </section>
+        
+        
+        
+       
+    </div>
+    <script src="js/like.js"></script>
+    <script src="js/popup.js"></script>    
+    <script src="js/scrollTo.js"></script>
+    <script src="js/calc.js"></script>
 </body>
 </html>
